@@ -41,6 +41,7 @@
 								<li><a href="#projects">Projects</a></li>
 								<li><a href="#about">About Me</a></li>
 								<li><a href="#contact">Contact</a></li>
+								<!--<li><a href="#resume">Resume</a></li>-->
 								<!--<li><a href="#elements">Elements</a></li>-->
 							</ul>
 						</nav>
@@ -90,7 +91,7 @@
 								<span class="image main"><img src="images/football field.jpg" alt="" /></span>
 								<strong style="font-size: 25px;">Python Data Engineering Project: Wrangling, Merging, and Visualizing NFL Player and Game data from the years 2017, 2018, and 2019</strong>
 								<p><p>
-								<p>This project combined data from three different sources, all from the same time period: the years 2017,2018, and 2019. The first data source is an Excel file of NFL Combine data compiled from <a href="https://nflcombineresults.com/" target="_blank" rel="noopener noreferrer">www.nflcombineresults.com. </a>The second source contains NFL draft data scraped from <a href="https://www.pro-football-reference.com" target="_blank" rel="noopener noreferrer">www.pro-football-reference.com. </a> The third source contains NFL Fantasy data retrieved from the API of <a href="https://www.fantasyfootballdatapros.com" target="_blank" rel="noopener noreferrer">www.fantasyfootballdatapros.com.</p>
+								<p>This project combined data from three different sources, all from the same time period: the years 2017, 2018, and 2019. The first data source is an Excel file of NFL Combine data compiled from <a href="https://nflcombineresults.com/" target="_blank" rel="noopener noreferrer">www.nflcombineresults.com. </a>The second source contains NFL draft data scraped from <a href="https://www.pro-football-reference.com" target="_blank" rel="noopener noreferrer">www.pro-football-reference.com. </a> The third source contains NFL Fantasy data retrieved from the API of <a href="https://www.fantasyfootballdatapros.com" target="_blank" rel="noopener noreferrer">www.fantasyfootballdatapros.com.</p>
 								<p>After wrangling and cleaning the data sources, each was loaded into Tables in a SQLLite database using the Python SQLAlchemy library. The Tables were then joined in pairs in SQL and loaded back into Python dataframes. Finally, several visualizations were created to explore the relationships between varaibles in the merged data.</p>
 
 								<a href="https://nbviewer.org/github/DanZylkowski/Python-Data-Engineering-Project-Merging-NFL-Draft-NFL-Combine-and-NFL-Fantasy-stats/tree/master/" target="_blank" rel="noopener noreferrer"><strong>Click here to view the github repository for this project</strong></a>
@@ -114,6 +115,23 @@
 								<a href="https://nbviewer.jupyter.org/github/DanZylkowski/Predicting-the-Price-of-a-Used-Car-in-the-UK/tree/main/" target="_blank" rel="noopener noreferrer"><strong>Click here to view the github repository for this project</strong></a>
 								<hr/>
 
+								<span class="image main"><img src="images/Cancer Images.jpg" alt="" /></span>
+								<strong style="font-size: 25px;">Brain Tumor MRI Classification and Lung and Colon Cancer Histopathological Image Classification with Keras and Fastai</strong>
+								<p><p>
+								<p>According to the <a href="https://www.cancer.org/content/dam/cancer-org/research/cancer-facts-and-statistics/annual-cancer-facts-and-figures/2020/cancer-statistics-presentation-2020.pptx" target="_blank" rel="noopener noreferrer">American Cancer Society estimates, </a> in the year 2021 Lung and Colon cancer will account for approximately 20% of all cancer diagnoses, and approximately 30% of all cancer deaths. Early detection and diagnosis of cancerous tumors are the most critical factors for the successful treatment of cancer. A tumor is an abnormal growth or mass of cells, but not all tumors are cancerous. Medical imaging is one way to identify cancerous tumors, and two common medical imaging methods used are Magnetic Resonance Imaging <a href="https://www.cancer.org/treatment/understanding-your-diagnosis/tests/mri-for-cancer.html" target="_blank" rel="noopener noreferrer">(MRI), </a> and <a href="https://en.wikipedia.org/wiki/Histopathology" target="_blank" rel="noopener noreferrer">histopathology. </a>
+								<p>This project used three different datasets to determine if deep learning models can be built using Keras and Fastai to accomplish the following:  
+
+    							<ul>
+        							<li>Accurately classify brain tumor MRI images into one of four classes: glioma, meningioma, pituitary tumor, or benign.</li>
+        							<li>Accurately classify if colon tissue histopathological images are cancerous or benign.</li>
+        							<li>Accurately classify lung tissue histopathological images into one of three classes: adenocarcinoma, squamous cell carcinoma, or benign.</li>
+    							</ul>
+								</p>
+
+
+								<a href="https://nbviewer.org/github/DanZylkowski/Brain-Tumor-MRI-and-Lung-and-Colon-Cancer-Histopathological-Image-Classification-with-Keras-Fastai/tree/main/" target="_blank" rel="noopener noreferrer"><strong>Click here to view the github repository for this project</strong></a>
+								<hr/>
+
 								<span class="image main"><img src="images/football player size.jpg" alt="" /></span>
 								<strong style="font-size: 25px;">NFL Player Statistical Analysis - Are Modern NFL Players Bigger, Faster, and Stronger?</strong>
 								<p><p>
@@ -124,7 +142,7 @@
 								<hr/>
 
 								<span class="image main"><img src="images/nfl team logos.jpg" alt="" /></span>
-								<strong style="font-size: 25px;">NFL Team Logo Image Classification with Keras and Fastai</strong>
+								<strong style="font-size: 25px;">NFL-Team-Logo-Image-Classification-with-Keras-and-Fastai</strong>
 								<p><p>
 								<p>Image classification is an exciting subclass of computer vision. Important uses cases for image classification include identifying cancer in X-rays or allowing self-driving cars to identify objects in the road. This project aims to classify the images of the logos of 31 of the 32 NFL teams. The Washington Football Team is not being included in this analysis since the team has no current logo and will not have a new logo until 2022.</p>
 								<p>The project has three parts: data collection and cleaning, training a Convolutional Neural Network (CNN) from scratch in Keras, and finally building a model on top of the ResNet50 model using the fastai library. The goal of the project is to create a CNN model that will classify NFL team logo images with high accuracy. While the focus of the project is to classify NFL team logos, the project could be used as a template for creating CNN models that can classify other types of images with only slight modifications to the data collection and modeling steps.</p>
@@ -157,7 +175,7 @@
 									<input type="email" name="_replyto" id="email-address" placeholder="email@domain.tld" required="">
 							
 									<label for="message">Message</label>
-									<textarea rows="5" name="message" id="message" placeholder="Your message."
+									<textarea rows="5" name="message" id="message" placeholder="Aenean lacinia."
 									required=""></textarea>
 									<input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
 								  </fieldset>
@@ -173,6 +191,13 @@
 									<li><a href="https://www.facebook.com/dan.zylkowski" target="_blank" rel="noopener noreferrer" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
 
 								</ul>
+							</article>
+
+						<!-- About -->
+							<article id="resume">
+								<h2 class="major">Resume</h2>
+								<span class="image main"><img src="images/Profile Picture.jpg" alt="" /></span>
+								<p>Hello, my name is Dan Zylkowski and I am a mathematician and aspiring Data Scientist.</p>
 							</article>
 
 
